@@ -33,7 +33,8 @@ function calcular(){
         circ1.raio = PegaRaio
         
         
-        MSG.innerHTML = `<div> O raio do cículo é de ${circ1.raio}. Ele tem a Circuferência igual a ${circ1.circuferencia()} e área igual a ${circ1.area()}.</div> <br> <div class="circle" style="height: ${circ1.raio}0px; width:${circ1.raio}0px ;"></div>`
+        MSG.innerHTML = `<div> O raio do cículo é de ${circ1.raio}. Ele tem a Circuferência igual a ${circ1.circuferencia()} e área igual a ${circ1.area()}.<br>
+        Abaixo Criaremos um cículo com as dimensões que você apresentou, em pixels:</div> <br> <div class="circle" style="height: ${circ1.raio}px; width:${circ1.raio}px ;"></div>`
     }
 
 }
