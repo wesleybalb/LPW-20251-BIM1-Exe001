@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+body{
+    font-family: Iceland;
+    margin: 0;
+
+
+}
+
+:root{
+    --azul-titulo: darkblue;
+    --azul-bg-title: lightblue;
+    --azul-bg-content: lightskyblue;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'aside section blank'
+    'footer footer footer'
+    ;
+    grid-template-rows: 100px 80vh 100px;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    gap: 5px;
+    
+
+}
+
+header{
+    grid-area: header;
+    background-color: var(--azul-bg-title);
+    color: var(--azul-titulo);
+    text-align: center;
+    justify-content: center;
+    place-content: center;
+
+
+}
+
+aside{
+    grid-area: aside;
+    
+
+}
+
+section{
+    grid-area: section;
+    background-color: var(--azul-bg-content);
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    
+    div{
+        padding: 10px;
+        font-weight: 700;
+        font-size: 18px;
+        text-decoration: underline;
+        #raio{
+            margin: 10px;
+            width: 80px;
+            height: 30px;
+            border-radius: 5px;
+            border: solid 1px var(--azul-bg-content);
+        }
+    }
+    button{
+        font-family: Iceland;
+        font-size: 20px;
+        background-color: aliceblue;
+        border: 2px;
+        border-radius: 10px;
+        height: 40px;
+
+        &:hover{
+            background-color: aquamarine;
+            transition: 0.5s;
+        }
+    }
+    
+    .resutado{
+        /* display: grid;
+        align-items: center;
+        place-content: center; */
+
+        #forma{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            place-items: center;
+            padding-top: 50px;
+            
+    
+            .circle{
+                width: 10px;
+                height: 10px;
+                margin: 0px;
+                padding: 0px;
+                /* background-color: black;  */
+                place-content: center;
+                border-radius: 100%;
+                border: 2px solid black;
+            }
+    
+        }
+    }
+
+
+
+}
+
+footer{
+    grid-area: footer;
+    background-color: var(--azul-bg-title);
+    text-align: center;
+    place-content: center;
+    color: var(--azul-titulo);
+}
